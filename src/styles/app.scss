@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
+
+@import "form";
+@import "profil";
+@import "hero";
+@import "sitebar";
+@import "rightbox";
+@import "main";
+@import "category";
+@import "lists";
+@import "saved";
+@import "modal";
+@import "postDesc";
+@import "edit";
+@import "bookmarks";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.reklamaBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.reklama {
+    text-align: center;
+    line-height: 80px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.ulList {
+    padding: 0;
+    list-style-type: none;
+}
+
+.minicontainer {
+    width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+

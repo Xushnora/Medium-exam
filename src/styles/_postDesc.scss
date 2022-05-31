@@ -1,0 +1,74 @@
+.posts {
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__textTitle {
+        font-size: 32px;
+        color: #292929;
+        margin-top: 40px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__name {
+        font-size: 16px;
+        color: #292929;
+        margin-bottom: 0;
+    }
+
+    &__rowBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__btnGroup {
+        
+        button {
+            background: transparent;
+            border: none;
+            margin-right: 7px;
+            cursor: pointer;
+        }
+
+        .bx {
+            font-size: 22px;
+            color: #747474;
+            transition: all 0.3s ease;
+        }
+        
+        .bx:hover {
+            color: #292929;
+        }
+
+
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+
+    &__descInfo {
+        line-height: 32px;
+        margin-top: 2em;
+        font-size: 20px;
+        color: rgba(41, 41, 41, 1);
+        letter-spacing: 1px;
+    }
+}

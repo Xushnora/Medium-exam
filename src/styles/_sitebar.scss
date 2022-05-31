@@ -1,0 +1,93 @@
+.sitebar {
+    border-right: 1px solid rgb(173, 173, 173);
+    width: 5%;
+    height: 100vh;
+    position: fixed;
+    background-color: #fff;
+}
+
+.sitebarBox {
+    text-align: center;
+    padding: 0 10px;
+
+    &__logo-box {
+        padding: 40px 0;
+    }
+
+    &__logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__btns {
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        border-bottom-width: 1px;
+    }
+
+    &__btn {
+        margin-bottom: 35px;
+        border: none;
+        background-color: transparent;
+
+        .bx {
+            font-size: 27px;
+            color: rgb(148, 148, 148);
+            transition: all 0.2s ease;
+        }
+
+    }
+
+    .bx:hover {
+        color: rgb(27, 27, 27);
+    }
+
+    &__editBtn {
+        margin: 35px 0;
+        border: none;
+        background-color: transparent;
+
+        .bx {
+            font-size: 27px;
+            color: rgb(148, 148, 148);
+            transition: all 0.2s ease;
+        }
+    }
+
+    &__profilBox {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__profil {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 2px solid rgb(100, 100, 100);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(100, 100, 100);
+
+        img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+    }
+
+}
+
+
+.active {
+    .bx {
+        color: #292929;
+    }
+}
+
+

@@ -1,0 +1,60 @@
+.cardBox {
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    
+    &__inRow {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+        line-height: 28px;
+        font-size: 22px;
+        color: #292929;
+    }
+
+    &__img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    &__btn {
+        padding: 8px 16px;
+        background-color: #fff;
+        color: #292929;
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 100px;
+        border: none;
+        margin-right: 8px;
+        border: 1px solid #292929;
+        margin-right: 12px;
+    }
+
+    &__str {
+        font-size: 13px;
+        color: #757575;
+        margin-right: 10px;
+    }
+
+    &__icon {
+
+        .bx {
+            color: #757575;
+        }
+    }
+
+    &__right {
+        position: relative;
+    }
+
+}

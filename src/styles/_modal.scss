@@ -1,0 +1,128 @@
+.modalBox {
+    position: absolute;
+    top: 30px;
+    right: -80px;
+    z-index: 1000;
+    padding: 24px 20px 16px 24px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__name {
+        font-size: 16px;
+        color: #292929;
+
+        p{
+            font-size: 16px;
+            color: #292929;
+
+        }
+    }
+
+    &__bitn {
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        color: #1a8917;
+        padding: 20px 0px 4px;
+    }
+}
+
+.bigModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    background-color: #fff;
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__inputText {
+        width: 400px;
+        padding: 10px;
+        font-size: 15px;
+        color: #ccc;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgb(153, 153, 153);
+    }
+
+    &__form {
+        padding-bottom: 20px;
+    }
+
+    &__count {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 13px;
+        color: rgb(151, 151, 151);
+    }
+
+    &__inputDesc {
+        border: none;
+        color: #1a8917;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__btnss {
+        margin-top: 160px;
+    }
+
+    &__cancel {
+        padding: 7px 16px 9px;
+        color: #292929;
+        font-size: 14px;
+        background-color: transparent;
+        border: 1px solid #535353;
+        border-radius: 99em;
+        margin-right: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            border-color: #000;
+        }
+    }
+
+    &__cansel {
+        padding: 7px 16px 9px;
+        color: #fff;
+        font-size: 14px;
+        background-color: #1a8917;
+        border: 1px solid #1a8917;
+        border-radius: 99em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #41c93c;
+        }
+    }
+
+    &__chekkedBox {
+        margin-top: 20px;
+
+        label {
+            font-size: 14px;
+            color: #535353;
+        }
+    }
+}

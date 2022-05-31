@@ -1,0 +1,95 @@
+.forum {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #fff;
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__img-box1 {
+        padding: 100px 38px;
+        background-color:  #CDB294;
+        width: 50%;
+        height: 100vh;
+    }
+    
+    &__img-box2 {
+        padding: 100px 38px;
+        background-color:  #C9AC8C;
+        width: 50%;
+        height: 100vh;
+    }
+
+    &__info {
+        padding: 75px 108px;
+        width: 50%;
+        height: 100vh;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__title {
+        font-family: 'Arial Black';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 51px;
+        color: #000000;
+        margin: 0 0 10px 0;
+    }
+    &__link-text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #000000;
+        margin: 0 0 21px 0;
+        display: flex;
+        align-items: center;
+    }
+    &__link-text a{
+       color:rgb(119, 233, 195);
+       margin: 0 0 0 5px;
+       text-decoration: none;
+    }
+    &__form {
+        justify-content: center;
+        width: 100%;
+    }
+    &__input {
+        display: block;
+        background: #fff;
+        border: 1px solid #B4B4BB;
+        border-radius: 10px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #AAAAAA;
+        padding: 16px 0 16px 29px;
+        margin: 0 0 16px 0;
+        width: 90%;
+        outline: none;
+    }
+    &__btn {
+        background: #152540;
+        border-radius: 99px;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 36px;
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        width: 90%;
+        justify-content: center;
+    }
+}

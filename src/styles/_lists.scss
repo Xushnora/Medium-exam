@@ -1,0 +1,83 @@
+.listBox {
+    padding: 58px 0;
+    margin-bottom: 30px;
+
+    &__rows {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: #292929;
+        font-size: 42px;
+        line-height: 52px;
+        font-weight: 700px;
+        letter-spacing: -1px;
+    }
+
+    &__btn {
+        color: #fff;
+        padding: 9px 20px 9px;
+        background-color: #1a8917;
+        font-size: 1rem;
+        border: none;
+        border-radius: 99em;
+    }
+}
+
+.save {
+    &__main {
+        position: relative;
+        margin: 40px 0 15px 0;
+        display: flex;
+        align-items: center;
+        background-color: #1a8917;
+        border-radius: 5px;
+        padding: 50px 30px;
+        overflow: hidden;
+    }
+    &__main-box {
+        margin: 0 180px 0 0;
+    }
+    &__main-title {
+        font-size: 24px;
+        color: #fff;
+        font-weight: 700;
+        margin: 0 0 20px 0;
+    }
+    .list-btn {
+        background-color: #292929;
+    }
+    &__circle-btn {
+        background-color: #fff;
+        width: 59px;
+        height: 59px;
+        border-radius: 50%;
+        font-size: 27px;
+        color: #1a8917;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline: 100px solid #44b140;
+    }
+    &__remove-btn {
+        background-color: transparent;
+        color: #fff;
+        font-size: 24px;
+        border: none;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    &__btn {
+        background-color: #1a8917;
+        border: none;
+        padding: 9px 20px 9px;
+        font-size: 17px;
+        color: #fff;
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,128 @@
+.users {
+    width: 90%;
+    margin: 0 auto;
+    background: radial-gradient(85.43% 1678.66% at 98.07% 50%, #2F2F2F 0%, #171717 100%);
+    box-shadow: 0px 4px 73px rgba(0, 0, 0, 0.25);
+    padding-left: 76px;
+    padding-top: 38px;
+    padding-bottom: 12px;
+    border-radius: 15px;
+    margin-top: 21px;
+    position: relative;
+    margin-bottom: 30px;
+
+
+    &__bgImgbox {
+        position: absolute;
+        right: 0;
+        top: -22px;
+        background-image: url('https://i.imgur.com/1ZJeEbK.png');
+        background-repeat: no-repeat;
+        width: 363px;
+        height: 365px;
+        background-position: center right;
+    }
+
+    &__rowIn {
+        display: flex;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__imgbox {
+        margin-right: 35px;
+        text-align: center;
+    }
+
+    &__img {
+        width: 169px;
+        height: 169px;
+        border-radius: 50%;
+    }
+
+    &__relative {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    &__iconStar {
+        position: absolute;
+        right: 15px;
+        bottom: -7px;
+        width: 45px;
+        height: 45px;
+        border: 2px solid #C9AC8C;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #191919;
+
+        .bx {
+            color: #C9AC8C;
+            font-size: 27px;
+        }
+    }
+
+    &__title {
+        font-family: 'Steinbeck';
+        font-size: 22px;
+        line-height: 144.4%;
+        color: #C9AC8C;
+    }
+
+    &__text {
+        font-family: 'Steinbeck';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 144.4%;
+        color: #fff;
+    }
+
+    &__name {
+        font-family: 'Steinbeck';
+        font-size: 24px;
+        line-height: 144.4%;
+        color: #C9AC8C !important;
+    }
+
+    &__info {
+        font-family: 'Steinbeck';
+        font-size: 22px;
+        line-height: 144.4%;
+        color: #ffffff5b;
+
+        span {
+            color: #fff;
+        }
+    }
+
+}
+
+.books__title {
+    text-align: center;
+    color: #C9AC8C;
+    font-family: 'Steinbeck';
+    font-size: 32px;
+    margin-bottom: 30px;
+
+}
+
+.books__list {
+    display: flex;
+    align-items: center;
+
+}
+
+.asar__auther {
+    font-family: 'Visuelt Pro';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 144.4%;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0;
+}
