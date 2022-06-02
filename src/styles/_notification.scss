@@ -1,0 +1,22 @@
+.note {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+        font-size: 14px;
+        color: #757575;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: #757575;
+        margin: 0;
+        color: #1a8917;
+    }
+}
+
+.nodeText {
+   
+}

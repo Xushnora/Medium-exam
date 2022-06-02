@@ -39,12 +39,14 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs({cardArr, bookmarks, setBookmarks, setNewBookmark, newBookmark, saved, setSaved}) {
+export default function BasicTabs({
+  cardArr, 
+  saved, 
+  setSaved, 
+  data, 
+  setData
+}) {
   const [value, setValue] = React.useState(0);
-
-  const useEffect = () => {
-    setBookmarks(...bookmarks )
-  }
   
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -59,7 +61,10 @@ export default function BasicTabs({cardArr, bookmarks, setBookmarks, setNewBookm
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <h2>Bu yerda sizning Followerlaringiz bo'lishi mumkin edi</h2>
+        <div className='homes'>
+            <h2 className='homes__title'>Stories from the writers you follow will appear here.</h2>
+            <button className='homes__btn'>Browse recommended stories</button>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
             <div className="HeroBox__article article">
@@ -68,7 +73,7 @@ export default function BasicTabs({cardArr, bookmarks, setBookmarks, setNewBookm
                         return <Posts 
                             name = {post.name}
                             avatar = {post.avatar}
-                            data = {post.data}
+                            date = {post.data}
                             textTitle = {post.textTitle}
                             img = {post.img}
                             desc = {post.desc}
@@ -77,10 +82,8 @@ export default function BasicTabs({cardArr, bookmarks, setBookmarks, setNewBookm
                             id = {post.id}
                             saved = {saved}
                             setSaved = {setSaved}
-                            setNewBookmark = {setNewBookmark}
-                            newBookmark = {newBookmark}
-                            bookmarks = {bookmarks}
-                            setBookmarks = {setBookmarks}
+                            data = {data}
+                            setData = {setData}
                         />
                     })}
                 </ul>

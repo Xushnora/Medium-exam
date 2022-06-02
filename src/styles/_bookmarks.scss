@@ -1,8 +1,58 @@
 .bookmarks {
     display: flex;
     align-items: center;
+
+    p {
+        color: #515151;
+    }
+
+    &__infoBox {
+        padding: 20px 0;
+    }
+
+    &__title {
+        // margin-bottom: 40px;
+        font-size: 32px;
+        color: #292929;
+    }
+
+    &__input {
+        padding: 10px;
+        width: 80%;
+        border: none;
+        border-left: 3px solid #292929;
+        outline: none;
+        font-style: italic;
+        font-size: 16px;
+    }
+
+    &__btns {
+        margin-right: 15px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #515151;
+    }
+
+    .bx {
+        transition: all 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+            color: #292929;
+        }
+    }
+
 }
 
+.done {
+    color: #1a9817;
+}
+
+.inputBoxs {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
 
 .bookmarks__userImg {
     width: 50px !important;
@@ -18,3 +68,4 @@
         display: block;
     }
 }
+

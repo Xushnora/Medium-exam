@@ -4,8 +4,12 @@ import RightBox from "../../Main/RightBox";
 import Sitebar from "../../Main/SiteBar/Sitebar";
 import TabPanel from "./ListTabs"
 
-function Lists({saved}){
-    console.log(saved);
+function Lists({
+    saved,
+    data,
+    setData
+}){
+    
     return(
         <>
             <Container>
@@ -20,7 +24,10 @@ function Lists({saved}){
                                 <button className="listBox__btn">New list</button>
                             </div>
                             <div>
-                                <TabPanel />
+                                <TabPanel 
+                                    data = {data}
+                                    setData = {setData}
+                                />
                             </div>
                         </div>
                     </div>

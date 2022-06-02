@@ -2,6 +2,8 @@ import React from "react";
 
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
+import FixedBox from "../FixedBox/FixedBox";
+import Offcanvas from "../Offcanvas/Offcanvas";
 
 
 const BootstrapTooltip = styled(({ className, ...props }) => (
@@ -15,7 +17,19 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
     },
 }));
 
-function PostDesc({id, name, avatar, data, textTitle, desc, img, descInfo}){
+function PostDesc({
+    id, 
+    name, 
+    avatar, 
+    data, 
+    textTitle, 
+    desc, 
+    img, 
+    descInfo, 
+    commentsArr,
+    nameInput,
+    lastName
+}){
     return(
         <div className="posts">
            <div className="article__itemBox-text">
@@ -65,6 +79,12 @@ function PostDesc({id, name, avatar, data, textTitle, desc, img, descInfo}){
                 <img className="posts__img" src={img} alt="work" />
                 <p className="posts__descInfo">{desc}</p>
             </div> 
+            <FixedBox />
+            <Offcanvas 
+                commentsArr = {commentsArr}
+                nameInput = {nameInput}
+                lastName = {lastName}
+            />
         </div>
     )
 }

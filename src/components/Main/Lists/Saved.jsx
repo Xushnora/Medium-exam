@@ -2,7 +2,8 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 
-function Saved({id, name, textTitle, desc, descInfo, img, data, obj}){
+function Saved({ name, img, data }){
+    
     return(
        <>
             <li className="cardBox">
@@ -19,7 +20,9 @@ function Saved({id, name, textTitle, desc, descInfo, img, data, obj}){
                             </div>
                         </div> 
                         <div className="cardBox__right">
-                            <img className="cardBox__img" src={img} alt="work" />
+                            <img className="cardBox__img first" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg" alt="work" />
+                            <img className="cardBox__img second" src="https://imgur.com/1hmdZBB.jpg" alt="work" />
+                            <img className="cardBox__img third" src={img} alt="work" />
                         </div> 
                     </div>
                 </Link>    

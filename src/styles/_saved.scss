@@ -22,9 +22,10 @@
     }
 
     &__img {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
         object-fit: cover;
+        border-radius: 8px;
     }
 
     &__btn {
@@ -57,4 +58,25 @@
         position: relative;
     }
 
+}
+
+.first {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 12px   ;
+}
+
+.second {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    z-index: 13px;
+}
+
+.third {
+    position: absolute;
+    top: 0;
+    right: 70px;
+    z-index: 15px;
 }

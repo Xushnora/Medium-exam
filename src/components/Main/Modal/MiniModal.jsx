@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import CheckboxLabels from './CheckBox'
 import TransitionsModal from './BigModal'
-import Checkbox from '@mui/material/Checkbox';
 import obj from "../../../Object"
+import { CheckBox } from "@mui/icons-material";
 
-function MiniModal({id, bookmarks, setBookmarks, newBookmark, setNewBookmark}){
+function MiniModal({
+    id, 
+    data,
+    setData
+}){
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -23,21 +27,25 @@ function MiniModal({id, bookmarks, setBookmarks, newBookmark, setNewBookmark}){
                 }
             }
         })
-        console.log(obj);
+        // console.log(bookmarks);
     }
 
     return(
         <div className="modalBox">
                 <ul className="modalBox__list">
-                    <li className="modalBox__item">
-                        <div onClick={() => handleSaved(id)} className="modalBox__name">
-                            <Checkbox {...label} />
-                            <span>Reading list</span>
-                        </div>
-                        <div className="modalBox__icon">
-                            <i class='bx bxs-lock-alt'></i>
-                        </div>
-                    </li>
+                    {data && data.map((item, i) => {
+                        return (
+                            <li key={i} className="modalBox__item">
+                                <div className="modalBox__name">
+                                    <CheckBox {...label} defaultChecked color="success" />
+                                    <span>{item.name}</span>
+                                </div>
+                                <div className="modalBox__icon">
+                                <i class='bx bxs-lock-alt'></i>
+                                </div>
+                            </li>
+                        )
+                    })}
                 </ul>
             <div>
                 <button  className="modalBox__bitn"
@@ -50,10 +58,8 @@ function MiniModal({id, bookmarks, setBookmarks, newBookmark, setNewBookmark}){
                     setOpen = {setOpen}
                     handleOpen = {handleOpen}
                     handleClose = {handleClose}
-                    newBookmark = {newBookmark}
-                    setNewBookmark = {setNewBookmark}
-                    bookmarks = {bookmarks}
-                    setBookmarks = {setBookmarks}
+                    data = {data}
+                    setData = {setData}
                 />
             </div>
         </div>

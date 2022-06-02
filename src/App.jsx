@@ -11,7 +11,7 @@ import Lists from './components/Main/Lists/Lists';
 import Edit from './components/Main/NewPosts/Edit';
 import BookmarkPage from './components/Main/Lists/Bookmarks';
 import Notifications from './components/Main/SiteBar/Notifications';
-import Stories from './components/Main/SiteBar/Stories';
+import Stories from './components/Main/Stories/Stories';
 
 function App() {
 
@@ -20,25 +20,31 @@ function App() {
   const [number, setNumber] = useState("");
   const [email, setEmail]  = useState("");
 
-  // Modal uchun
-  const [bookmarks, setBookmarks] = useState([])
-  const [newBookMark, setNewBookmark] = useState([])
-
   const [saved, setSaved] = useState([...obj])
 
+  // PUBLISH QILISH UCHUN
+  let [inputText, setInputText] = useState([])  
+  let [createInput, setCreateInput] = useState('')
+
+  // LIST SAQLASH UCHUN
+  const [data, setData] = useState([
+    {
+        name: "Reading list",
+        id: 217389274983
+    }
+  ])
 
   return (
     <div className="App">
       <Routes>
         <Route path="main" element = {<Main 
-            bookmarks = {bookmarks}
-            setBookmarks = {setBookmarks}
-            newBookMark = {newBookMark}
-            setNewBookmark = {setNewBookmark}
             saved = {saved}
             setSaved = {setSaved}
-            
-        />} />
+            data = {data}
+            setData = {setData}  
+
+          />} 
+        />
         <Route path='/' element = {
             <SignUp 
               name = {name}
@@ -65,12 +71,32 @@ function App() {
         />} 
         />
         <Route path="signin" element = {<SignIn />} />
-        <Route path = "posts/:id" element = {<PostInfo objData = {obj} />}/>
-        <Route path="lists" element = {<Lists saved = {saved} />} />
-        <Route path="edit" element = {<Edit />} />
-        <Route path='bookmarks' element = {<BookmarkPage />} />
+        <Route path = "posts/:id" element = {
+        <PostInfo 
+          objData = {obj} 
+          name = {name}
+          lastName = {lastName}
+          />}
+        />
+        <Route path="lists" element = {<Lists 
+          saved = {saved}
+          data = {data}
+          setData = {setData}
+          />} 
+        />
+        <Route path="edit" element = {
+          <Edit
+            inputText={inputText} 
+            setInputText={setInputText}
+            createInput={createInput}
+            setCreateInput={setCreateInput}
+            name = {name}
+            lastName = {lastName}
+          />} 
+        />
+        <Route path='bookmarks' element = {<BookmarkPage obj = {obj} />} />
         <Route path='notifications' element = {<Notifications />} />
-        <Route path='stories' element = {<Stories />} />
+        <Route path='stories' element = {<Stories inputText={inputText}/>} />
       </Routes>
     </div>
   );

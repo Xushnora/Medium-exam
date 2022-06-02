@@ -32,6 +32,29 @@ const Object = [
         Whether learning high-value skills to make more money, new languages to emerge yourself in different cultures, or party tricks to show off to your friends, there are dozens of skills to learn.
     
         Where scrolling through your phone provides a temporary high — the dopamine spike is short-lived — learning a new skill will stick with you for years, if not an entire lifetime.`,
+
+        commentsArr: [
+            {
+                id: 1,
+                userImg: "https://miro.medium.com/fit/c/32/32/1*0blgGSJeJ3fbtSZ_zXHong.jpeg",
+                userName: "Busayo",
+                userData: "3 days ago",
+                reaksiya: 15,
+                replies: 0,
+                comment: `Thank you for writing your article on Blogging Niches for 2022. It is well written and very helpful. I enjoyed reading it. I will be reading your other articles also as their titles are quite appealing. I will follow you. Thanks again.`,
+            },
+            {
+                id: 9,
+                userImg: "https://miro.medium.com/fit/c/29/29/1*Y8-57jrdTWoHs9C07SsVSQ.jpeg",
+                userName: "Sameer Makhani",
+                userData: "3 days ago",
+                reaksiya: 10,
+                replies: 1,
+                comment: `Hello everyone.
+                If you like my work please support me here.`,
+            },
+
+        ],
     },
     {
         id: 2,
@@ -42,6 +65,7 @@ const Object = [
         data: 'May 29',
         textTitle: 'Four Tricks to Eliminate Complex Conditional Expressions',
         img: 'https://miro.medium.com/max/700/0*q-4W7FkbMVg8Fner',
+        comment: `Thank you for writing your article on Blogging Niches for 2022. It is well written and very helpful. I enjoyed reading it. I will be reading your other articles also as their titles are quite appealing. I will follow you. Thanks again.`,
         descInfo: `If you want your dream UX writing job, your UX writer resume must show your ability to improve the user experience for products and services to achieve business goals. Moreover, if you can focus on tangible improvements tied to metrics that you made, whether for a login modal, signup modal onboarding flow, or even conversation design for a chatbot, then you’ll have a head start.`,
         desc: `
         Have you had enough of if-else complex nesting? I may give you some suggestions to improve the extensibility of the code.
@@ -64,6 +88,28 @@ const Object = [
         Whether learning high-value skills to make more money, new languages to emerge yourself in different cultures, or party tricks to show off to your friends, there are dozens of skills to learn.
     
         Where scrolling through your phone provides a temporary high — the dopamine spike is short-lived — learning a new skill will stick with you for years, if not an entire lifetime.`,
+        
+        commentsArr: [
+            {
+                id: 2,
+                userImg: "https://miro.medium.com/fit/c/32/32/1*5wdx4oCNnOKZB4fTN9OvHA.jpeg",
+                userName: "Yoj L. Carnay",
+                userData: "2 month ago",
+                reaksiya: 10,
+                replies: 2,
+                comment: `Thanks for these tips, aside from Medium, what blogging platform do you use for your blog/s?`,
+            },
+            {
+                id: 10,
+                userImg: "https://miro.medium.com/fit/c/29/29/1*-im5h6ud4dy_gAlAfeMXMA.jpeg",
+                userName: "Nertilagjoshi",
+                userData: "2 month ago",
+                reaksiya: 10,
+                replies: 2,
+                comment: `Nice read! The rich.. have a very different way of thinking!`,
+            },
+
+        ],
     },
     {
         id: 3,
@@ -74,6 +120,7 @@ const Object = [
         data: '·Mar 26',
         textTitle: '50 Day UI Design Challenge',
         img: 'https://miro.medium.com/max/700/1*Ra7lyv2bPk-FCsXATvwwrA.png',
+        comment: `Thank you for writing your article on Blogging Niches for 2022. It is well written and very helpful. I enjoyed reading it. I will be reading your other articles also as their titles are quite appealing. I will follow you. Thanks again.`,
         descInfo: `If you want your dream UX writing job, your UX writer resume must show your ability to improve the user experience for products and services to achieve business goals. Moreover, if you can focus on tangible improvements tied to metrics that you made, whether for a login modal, signup modal onboarding flow, or even conversation design for a chatbot, then you’ll have a head start.`,
         desc: `
         At first glance, there is nothing interesting going on in this email. However, if you are observant (=if you pay close attention to things), you will note a few useful points that you can start using in your workplace communication.
@@ -122,6 +169,18 @@ const Object = [
         No. Was I angry? Well, yeah. A bit. Who likes a no-show (=a person who is expected to be somewhere but doesn’t arrive)?
     
         You might have noticed that this reminder checks off all three important boxes:`,
+
+        commentsArr: [
+            {
+                id: 3,
+                userImg: "https://miro.medium.com/fit/c/32/32/0*4d2xD5KiCg37cLZ1.",
+                userName: "Sherman William Hunter Sr.",
+                userData: "3 month ago",
+                reaksiya: 10,
+                replies: 2,
+                comment: `Thank you for writing your article on Blogging Niches for 2022. It is well written and very helpful. I enjoyed reading it. I will be reading your other articles also as their titles are quite appealing. I will follow you. Thanks again.`,
+            },
+        ],
     },
     {
         id: 4,
@@ -132,6 +191,7 @@ const Object = [
         data: '·3 days ago',
         textTitle: '3 Key Rules of Written Communication',
         img: 'https://miro.medium.com/max/700/1*ipnAm6snbmmhZqjej3PZqg.jpeg',
+        comment: `Thank you for writing your article on Blogging Niches for 2022. It is well written and very helpful. I enjoyed reading it. I will be reading your other articles also as their titles are quite appealing. I will follow you. Thanks again.`,
         descInfo: `If you want your dream UX writing job, your UX writer resume must show your ability to improve the user experience for products and services to achieve business goals. Moreover, if you can focus on tangible improvements tied to metrics that you made, whether for a login modal, signup modal onboarding flow, or even conversation design for a chatbot, then you’ll have a head start.`,
         desc: `
         At first glance, there is nothing interesting going on in this email. However, if you are observant (=if you pay close attention to things), you will note a few useful points that you can start using in your workplace communication.
@@ -179,6 +239,18 @@ const Object = [
     
         No. Was I angry? Well, yeah. A bit. Who likes a no-show (=a person who is expected to be somewhere but doesn’t arrive)?
         You might have noticed that this reminder checks off all three important boxes:`,
+
+        commentsArr: [
+            {
+                id: 4,
+                userImg: "https://miro.medium.com/fit/c/32/32/1*Sm-QDh9-WVDT_ozGAj4gWA.jpeg",
+                userName: "Kinza Shahzad",
+                userData: "4 month ago",
+                reaksiya: 5,
+                replies: 0,
+                comment: `Helpful`,
+            },
+        ],
     },
     {
         id: 5,
@@ -187,6 +259,7 @@ const Object = [
         name: 'Jordy Schuck',
         category: 'Money',
         data: 'may 28',
+        comment: `Thank you for writing your article on Blogging Niches for 2022. It is well written and very helpful. I enjoyed reading it. I will be reading your other articles also as their titles are quite appealing. I will follow you. Thanks again.`,
         textTitle: 'Understand This Concept of Money Before Starting a Business',
         img: 'https://miro.medium.com/max/700/1*3y2142b4eY4jSqE3s5Sk3A.jpeg',
         descInfo: `If you want your dream UX writing job, your UX writer resume must show your ability to improve the user experience for products and services to achieve business goals. Moreover, if you can focus on tangible improvements tied to metrics that you made, whether for a login modal, signup modal onboarding flow, or even conversation design for a chatbot, then you’ll have a head start.`,
@@ -236,6 +309,18 @@ const Object = [
     
         No. Was I angry? Well, yeah. A bit. Who likes a no-show (=a person who is expected to be somewhere but doesn’t arrive)?
         You might have noticed that this reminder checks off all three important boxes:`,
+
+        commentsArr: [
+            {
+                id: 5,
+                userImg: "https://miro.medium.com/fit/c/32/32/1*SD3xivKTE4ZWpcZhNFoN7A.png",
+                userName: "AIMoneyMachine",
+                userData: "2 month ago",
+                reaksiya: 2,
+                replies: 0,
+                comment: `It is really a great piece of article. I am also a blog writer and I think, its helps me. Thanks!`,
+            },
+        ],
     },
     {
         id: 6,
@@ -246,6 +331,7 @@ const Object = [
         data: '·Dec 31, 2021',
         textTitle: 'The top 50 UX writing resources of 2021',
         img: 'https://miro.medium.com/max/700/1*F4yhEQd8MCI2B6DIa3ZPeQ.png',
+        comment: `Thank you for writing your article on Blogging Niches for 2022. It is well written and very helpful. I enjoyed reading it. I will be reading your other articles also as their titles are quite appealing. I will follow you. Thanks again.`,
         descInfo: `Our field evolved a ton in 2021! We’ve pulled together the best of the best resources for you to enjoy and keep handy in the year ahead. We know you might be thinking, “Another roundup?” Yes, but you’ll want to bookmark this one. Let’s get to it… `,
         desc: `
             1. How to write digital products with personality. It’s possible to add character to your product in many ways — with colors, fonts, illustrations, and more. Nick DiLallo highlights how choosing the right words at the right time will shape the entire user experience.
@@ -286,6 +372,18 @@ const Object = [
             19. So you’re writing a writing guide. Now what? Whether you’re a new writer or just new at a company, acclimating to the brand’s voice takes time. Justin Whaley gives us a glimpse at the new source for Square’s voice and tone.
       
             20. Understanding visual hierarchy. Do your users follow a Z of F scanning pattern while browsing your site? How can you design your content to naturally fit their searching behaviors? Thanks to Interaction Design Foundation for outlining how visual hierarchy helps keep our content organized and aligned with natural eye patterns.`,
+
+            commentsArr: [
+                {
+                    id: 6,
+                    userImg: "https://miro.medium.com/fit/c/32/32/1*mpw_P32_pmIjRb2ysiG0QA.jpeg",
+                    userName: "Cait",
+                    userData: "2 month ago",
+                    reaksiya: 7,
+                    replies: 1,
+                    comment: `Thanks for the tips! Having a hard time deciding what the write about and this helped a lot!`,
+                },
+            ],
     },
     {
         id: 7,
@@ -296,6 +394,7 @@ const Object = [
         data: 'Apr 30',
         textTitle: 'How to Write a UX Writer Resume',
         img:  'https://miro.medium.com/max/700/1*OIPlbtYS3LFX4WxSu55ZFA.jpeg',
+        comment: `Thank you for writing your article on Blogging Niches for 2022. It is well written and very helpful. I enjoyed reading it. I will be reading your other articles also as their titles are quite appealing. I will follow you. Thanks again.`,
         descInfo: `If you want your dream UX writing job, your UX writer resume must show your ability to improve the user experience for products and services to achieve business goals. Moreover, if you can focus on tangible improvements tied to metrics that you made, whether for a login modal, signup modal onboarding flow, or even conversation design for a chatbot, then you’ll have a head start.`,
         desc: `
             This comprehensive article contains the best professional UX writer resume examples and practices to help you land a job. Here is a list of the subjects we will be studying in-depth:
@@ -342,6 +441,27 @@ const Object = [
             
             All resumes are scanned by an ATS, which only accepts those with the right keywords in them. There is no need for hiring managers to go through all UX writer resumes. This saves them time and effort.
        `,
+
+       commentsArr: [
+            {
+                id: 7,
+                userImg: "https://miro.medium.com/fit/c/32/32/1*wARnY6W6319zIg2yhng5wg.jpeg",
+                userName: "Nessa Rodriguez",
+                userData: "3 month ago",
+                reaksiya: 2,
+                replies: 1,
+                comment: `Hi! Thank you for insightful article. Do you have any thoughts about building a self-love/care & mental health niche audience? I'm super passionate about this niche, but I see it's not exactly a popular one. Thanks again!`,
+            },
+            {
+                id: 8,
+                userImg: "https://miro.medium.com/fit/c/32/32/1*wARnY6W6319zIg2yhng5wg.jpeg",
+                userName: "Bu boshqa",
+                userData: "3 month ago",
+                reaksiya: 2,
+                replies: 1,
+                comment: `Hi! Thank you for insightful article. Do you have any thoughts about building a self-love/care & mental health niche audience? I'm super passionate about this niche, but I see it's not exactly a popular one. Thanks again!`,
+            },
+        ],
     },
     
 ]

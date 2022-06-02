@@ -1,0 +1,51 @@
+.stories__btn {
+    margin-left: 20px;
+    color: #515151;
+    padding: 9px 20px 9px;
+    background-color: #fff;
+    font-size: 1rem;
+    border: 1px solid #515151;
+    border-radius: 99em;
+}
+
+.stories__tableBox {
+    margin-top: 30px;
+}
+
+
+// LIST 
+.stories {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+
+    &__item {
+        border-bottom: 2px solid #ccc;
+        padding: 25px 0;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        font-size: 16px;
+        color: #292929;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    &__pub {
+        font-size: 14px;
+        color: #757575;
+        margin-right: 6px;
+    }
+
+    &__ikon {
+        background-color: transparent;
+        border: transparent;
+
+        .bx {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+    }
+
+}

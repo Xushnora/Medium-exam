@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
+import obj from '../../../Object'
 
-import CheckboxLabels from '../Modal/CheckBox'
 import MiniModal from "../Modal/MiniModal";
 
 
@@ -18,8 +18,35 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
     },
   }));
 
-function Posts({name, textTitle, avatar, img, desc, data, category, id, saved, setSaved, newBookmark, setNewBookmark, bookmarks, setBookmarks}){
-    const [modalopen, setModalOpen] = useState()
+function Posts({
+    name, 
+    textTitle, 
+    avatar, 
+    img, 
+    desc, 
+    date, 
+    category, 
+    id, 
+    saved, 
+    setSaved, 
+    data,
+    setData
+}){
+    const [modalopen, setModalOpen] = useState();
+
+    const handleSaved = (idx) => {
+        obj.map((el) => {
+            if(idx===el.id) {
+                if(el.isActive === true) {
+                    el.isActive = false
+                }
+                if(el.isActive === false) {
+                    el.isActive = true
+                }
+            }
+        })
+        // console.log(obj);
+    }
 
     return(
         <>
@@ -27,9 +54,11 @@ function Posts({name, textTitle, avatar, img, desc, data, category, id, saved, s
                     <Link to={`/posts/${id}`}>
                         <div className="article__itemBox">
                             <div className="article__itemBox-text">
-                                <img className="article__img" src={avatar} alt="avatar" />
-                                <p className="article__name">{name}</p>
-                                <span className="article__data">{data}</span>
+                                <div className="article__usersBox">
+                                    <img className="article__img" src={avatar} alt="avatar" />
+                                    <p className="article__name">{name}</p>
+                                    <span className="article__data">{date}</span>
+                                </div>
                                 <h2 className="article__textTitle">{textTitle}</h2>
                                 <p className="article__desc">{desc}</p>
                             </div>
@@ -49,7 +78,7 @@ function Posts({name, textTitle, avatar, img, desc, data, category, id, saved, s
                                     <button  onClick={()=> modalopen !== id ? setModalOpen(id): setModalOpen('')}
                                         className="article__addBtn"
                                         >
-                                        <i class='bx bx-bookmark-plus'></i>
+                                        <i onClick={() => handleSaved(id)} class='bx bx-bookmark-plus'></i>
                                     </button>  
                                 </BootstrapTooltip>
                                <div>
@@ -58,10 +87,8 @@ function Posts({name, textTitle, avatar, img, desc, data, category, id, saved, s
                                             id = {id} 
                                             saved = {saved}
                                             setSaved = {setSaved}
-                                            bookmarks = {bookmarks}
-                                            setBookmarks = {setBookmarks}
-                                            newBookmark = {newBookmark}
-                                            setNewBookmark = {setNewBookmark}
+                                            data = {data}
+                                            setData = {setData}
                                         />
                                     </div>
                                     <div>

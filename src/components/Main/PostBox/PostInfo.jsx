@@ -6,7 +6,11 @@ import Sitebar from "../SiteBar/Sitebar";
 
 import PostDesc from "./PostDesc";
 
-function PostInfo({objData}){
+function PostInfo({
+    objData,
+    name,
+    lastName
+}){
     let location = useLocation();
 
     return (
@@ -19,7 +23,8 @@ function PostInfo({objData}){
                         <div className="hero">
                         {objData.map((item, i) => {
                             if(item.id === +location.pathname.split('/').at(-1)) {
-                                return <PostDesc 
+                                return <PostDesc
+                                    commentsArr = {item.commentsArr}
                                     id = {item.id}
                                     name = {item.name}
                                     avatar = {item.avatar}
@@ -28,6 +33,8 @@ function PostInfo({objData}){
                                     textTitle = {item.textTitle}
                                     img = {item.img}
                                     descInfo = {item.descInfo}
+                                    nameInput = {name}
+                                    lastName = {lastName}
                 
                                 />      
                             }

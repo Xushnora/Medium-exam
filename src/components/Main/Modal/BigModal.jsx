@@ -24,22 +24,27 @@ const style = {
 };
 
 
-export default function TransitionsModal({open, handleClose, bookmarks, setBookmarks, newBookmark, setNewBookmark}) {
+export default function TransitionsModal({
+  open, 
+  handleClose, 
+  data,
+  setData
+}) {
 
   let count = 1;
+
   const saveInputHandler = (e) => {
-    setBookmarks({
-      name: e.target.value,
+    setData([
+      ...data, 
+      {
+      name: inputRef.current.value,
       id: count,
-    })
+      }
+    ])
     count++;
-
-    console.log(e.target.value);
   }
 
-  const saveCreate = (e) => {
-    setNewBookmark([...newBookmark, bookmarks])
-  }
+  const inputRef = React.useRef();
 
   return (
     <div>
@@ -61,22 +66,18 @@ export default function TransitionsModal({open, handleClose, bookmarks, setBookm
                 <h1 className='bigModal__title'>Create new list</h1>
                 <div>
                   <form className='bigModal__form'>
-                    <input onChange={saveInputHandler} className='bigModal__inputText' type="text" min = {0} max= {60} placeholder="Give it a name" required/>
+                    <input ref={inputRef} className='bigModal__inputText' type="text" min = {0} max= {60} placeholder="Give it a name" required/>
                     <p className='bigModal__count'>0/60</p>
                   </form>
                   <button className='bigModal__inputDesc'>Add description</button>
-                  {/* <div className='bigModal__inputDescBox'>
-                    <input className='bigModal__inputText' type="text" max= {280} min = {0} placeholder="Description" required/>
-                    <p className='bigModal__count'>0/280</p>
-                  </div> */}
                   <div className='bigModal__chekkedBox'>
                     <Checkbox Checked />
                     <label>Make it private</label>
                   </div>
                 </div>
                 <div className='bigModal__btnss'>
-                  <button className='bigModal__cancel'>Cancel</button>
-                  <button className='bigModal__cansel' onClick={saveCreate}>Create</button>
+                  <button className='bigModal__cancel' onClick={handleClose}>Cancel</button>
+                  <button className='bigModal__cansel' onClick={saveInputHandler}>Create</button>
                 </div>
               </div>
             </Typography>

@@ -6,7 +6,7 @@ function SignIn() {
     <div className='forum'>
         <div className='forum__inner'>
             <div className='forum__img-box2'>
-                <img src={'https://imgur.com/n02zeh5.png'} className="forum__img"/>
+                <img src={'http://localhost:3001/static/media/logo.7a57a16086231cfbc678.png'} className="forum__img"/>
             </div>
             <div className='forum__info'>
                 <h2 className='forum__title'>Sign In</h2>

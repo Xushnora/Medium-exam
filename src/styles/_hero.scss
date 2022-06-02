@@ -23,8 +23,7 @@
     &__following {
         display: flex;
         align-items: center;
-        border-bottom: 1px solid #747474;
-
+        // border-bottom: 1px solid #747474;
     }
 }
 
@@ -52,7 +51,12 @@
     }
 
     &__itemBox-text {
-        width: 80%;
+        width: 80%; 
+    }
+
+    &__usersBox {
+        display: flex;
+        align-items: center;
     }
 
     &__itemBox-img {
@@ -171,4 +175,29 @@
 .hero::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     border-radius: 30px;
+}
+
+
+.homes {
+    padding: 30px 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        font-size: 14px;
+        color: #292929;
+        font-weight: 500;
+    }
+
+    &__btn {
+        padding: 6px 14px;
+        background-color: #1a8917;
+        border-radius: 99em;
+        border: 1px solid transparent;
+        color: #fff;
+        margin-top: 10px;
+    }
 }

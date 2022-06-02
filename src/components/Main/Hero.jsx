@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import CategoryBtn from "./Categorybtn";
-import MiniModal from "./Modal/MiniModal";
 import BasicTabs from "./PostBox/Tabs"
 
-
-function Hero({newObj, cardArr, setCardArr, bookmarks, setBookmarks, newBookmark, setNewBookmark, saved, setSaved}){
+function Hero({
+    newObj, 
+    cardArr, 
+    setCardArr, 
+    saved, 
+    setSaved,
+    data,
+    setData
+}){
 
     const [categoryBtn, setCategoryBtn] = useState(["All", "Business", "Programming", "Design", "Money"])
     const typeArr = ["", "Business", "Programming", "Design", "Money"];
@@ -27,12 +33,10 @@ function Hero({newObj, cardArr, setCardArr, bookmarks, setBookmarks, newBookmark
             <div className="HeroBox__following">
                 <BasicTabs 
                     cardArr = {cardArr}
-                    bookmarks = {bookmarks}
-                    setBookmarks = {setBookmarks}
                     saved = {saved}
                     setSaved = {setSaved}
-                    newBookmark = {newBookmark}
-                    setNewBookmark = {setNewBookmark}
+                    data = {data}
+                    setData = {setData}
                 />
             </div>
         </div>

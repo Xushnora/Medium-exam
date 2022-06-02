@@ -6,15 +6,23 @@ import RightBox from "./RightBox";
 import Sitebar from "../Main/SiteBar/Sitebar";
 import obj from '../../Object.js'
 
-function Main({bookmarks, setBookmarks, newBookMark, setNewBookmark, saved, setSaved}){
+function Main({
+    saved, 
+    setSaved,
+    setEmptyStory,
+    emptyStory,
+    setStoryTextArr,
+    storyTextArr,
+    data,
+    setData
+}){
 
     const [newObj, setNewObj] = useState([...obj]);
-
     const[cardArr, setCardArr] = useState([])
-
-    useEffect(() => {
-        setCardArr(obj)
-    }, [])
+    
+        useEffect(() => {
+            setCardArr(obj)
+        }, [])
 
 
     return(
@@ -30,16 +38,18 @@ function Main({bookmarks, setBookmarks, newBookMark, setNewBookmark, saved, setS
                                 newObj = {newObj}
                                 setCardArr = {setCardArr}
                                 cardArr = {cardArr}
-                                bookmarks = {bookmarks}
-                                setBookmarks = {setBookmarks}
-                                newBookMark = {newBookMark}
-                                setNewBookmark = {setNewBookmark}
                                 setSaved = {setSaved}
                                 saved = {saved}
+                                storyTextArr = {storyTextArr}
+                                setStoryTextArr = {setStoryTextArr}
+                                emptyStory = {emptyStory}
+                                setEmptyStory = {setEmptyStory}
+                                data = {data}
+                                setData = {setData}
                             />
                         </div>
                         <div className="rightBox">
-                            <RightBox />
+                            <RightBox obj = {newObj} />
                         </div>
                     </div>
                 </Link>
