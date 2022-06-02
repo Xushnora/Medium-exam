@@ -7,7 +7,11 @@ import RightBox from "../RightBox";
 import Sitebar from "../SiteBar/Sitebar";
 import ReadingList from "./ReadingList";
 
-function BookmarkPage({obj}){
+function BookmarkPage({
+    obj,
+    name, 
+    lastName
+}){
     return(
         <>
                 <Link to="/bookmarks">
@@ -21,7 +25,7 @@ function BookmarkPage({obj}){
                                 <div className="Newpost__usLogobox bookmarks">
                                     <img className="bookmarks__userImg" src={user} alt="Logo" />
                                     <div className="bookmarks__infos">
-                                        <p>Xushnoranishonova</p>
+                                        <p>{name} {lastName}</p>
                                         <p>May 31 . 12 stories</p>
                                     </div>
                                 </div>

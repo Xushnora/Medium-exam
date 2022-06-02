@@ -108,7 +108,7 @@ function Offcanvas({
                         <ul className="comments__list">
                             {commentArr.map((item, i) => {
                                 return <CommentBox
-                                key={i}
+                                key={i + "bbbb"}
                                 replyArr = {replyArr}
                                 id = {item.id}
                                 userImg = {item.userImg}

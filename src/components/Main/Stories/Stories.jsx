@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Container from "../../../Layout/Container";
 import RightBox from "../RightBox";
 import Sitebar from "../SiteBar/Sitebar";
-import TablesBtn from "./StoriesTab";
 import BasicTable from "./StoriesTab";
 
 function Stories({ inputText }){

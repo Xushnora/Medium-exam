@@ -71,8 +71,7 @@ function ReadingList({
                                             <div style={{display: modalopen !== id ? 'none': 'block'}}>
                                                 <MiniModal
                                                     id = {id} 
-                                                    // saved = {saved}
-                                                    // setSaved = {setSaved}
+                                                
                                                 />
                                             </div>
                                             <div>

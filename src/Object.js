@@ -180,6 +180,15 @@ const Object = [
                 replies: 2,
                 comment: `Thank you for writing your article on Blogging Niches for 2022. It is well written and very helpful. I enjoyed reading it. I will be reading your other articles also as their titles are quite appealing. I will follow you. Thanks again.`,
             },
+            {
+                id: 11,
+                userImg: "https://miro.medium.com/fit/c/29/29/1*vs67F1vZ3MBT2TwLmbCWrg.jpeg",
+                userName: "Quyen Nguyen",
+                userData: "3 month ago",
+                reaksiya: 10,
+                replies: 2,
+                comment: `Nice stuff. After read your post, i am considering to buy a new cheaper mobile instead of iphone.`,
+            },
         ],
     },
     {
@@ -382,6 +391,16 @@ const Object = [
                     reaksiya: 7,
                     replies: 1,
                     comment: `Thanks for the tips! Having a hard time deciding what the write about and this helped a lot!`,
+                },
+                {
+                    id: 12,
+                    userImg: "https://miro.medium.com/fit/c/29/29/1*Y8-57jrdTWoHs9C07SsVSQ.jpeg",
+                    userName: "Kyle Poston",
+                    userData: "2 month ago",
+                    reaksiya: 7,
+                    replies: 1,
+                    comment: `Hello everyone.
+                    If you like my work please support me here.`,
                 },
             ],
     },

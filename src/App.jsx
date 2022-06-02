@@ -72,16 +72,18 @@ function App() {
         />
         <Route path="signin" element = {<SignIn />} />
         <Route path = "posts/:id" element = {
-        <PostInfo 
-          objData = {obj} 
-          name = {name}
-          lastName = {lastName}
-          />}
+          <PostInfo 
+            objData = {obj} 
+            name = {name}
+            lastName = {lastName}
+            />}
         />
         <Route path="lists" element = {<Lists 
           saved = {saved}
           data = {data}
           setData = {setData}
+          nameInput = {name}
+          lastName = {lastName}
           />} 
         />
         <Route path="edit" element = {
@@ -94,7 +96,13 @@ function App() {
             lastName = {lastName}
           />} 
         />
-        <Route path='bookmarks' element = {<BookmarkPage obj = {obj} />} />
+        <Route path='bookmarks' element = {
+        <BookmarkPage 
+          obj = {obj} 
+          name = {name}
+          lastName = {lastName}
+          />} 
+        />
         <Route path='notifications' element = {<Notifications />} />
         <Route path='stories' element = {<Stories inputText={inputText}/>} />
       </Routes>

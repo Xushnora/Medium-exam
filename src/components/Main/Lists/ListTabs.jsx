@@ -42,7 +42,12 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs({data, setData}) {
+export default function BasicTabs({
+  data, 
+  setData,
+  nameInput,
+  lastName
+}) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {

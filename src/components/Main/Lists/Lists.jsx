@@ -7,7 +7,9 @@ import TabPanel from "./ListTabs"
 function Lists({
     saved,
     data,
-    setData
+    setData,
+    nameInput,
+    lastName
 }){
     
     return(
@@ -27,6 +29,8 @@ function Lists({
                                 <TabPanel 
                                     data = {data}
                                     setData = {setData}
+                                    nameInput = {nameInput}
+                                    lastName = {lastName}
                                 />
                             </div>
                         </div>

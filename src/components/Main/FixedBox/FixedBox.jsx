@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
@@ -14,15 +14,21 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
     },
 }));
 
-
 function FixedBox(){
+
+    const [count, setCount] = useState(0)
+
+    const SetInterval =()=> {
+        setCount(count +1 )
+    }
+
     return(
         <>
             <div className="fixedBox">
                 <BootstrapTooltip title="Like" placement="top">
-                    <button className="fixedBox__likeBtn">
+                    <button onClick={()=>SetInterval()} className="fixedBox__likeBtn">
                         <i class='bx bx-like'></i>
-                        <span>14.4K</span>
+                        <span>{count}</span>
                     </button>
                 </BootstrapTooltip>
                 <button className="fixedBox__commt" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
@@ -37,4 +43,5 @@ function FixedBox(){
     )
 }
 
-export default FixedBox
+export default FixedBox;
+
