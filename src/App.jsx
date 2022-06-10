@@ -42,7 +42,6 @@ function App() {
             setSaved = {setSaved}
             data = {data}
             setData = {setData}  
-
           />} 
         />
         <Route path='/' element = {

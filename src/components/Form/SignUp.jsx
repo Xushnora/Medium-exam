@@ -106,7 +106,7 @@ function SignUp(
                 <div className='forum'>
                         <div className='forum__inner'>
                             <div className='forum__img-box1'>
-                                <img src={'http://localhost:3001/static/media/logo.7a57a16086231cfbc678.png'} className="forum__img"/>
+                                <img src='https://medium-exam-ten.vercel.app/static/media/logo.7a57a16086231cfbc678.png' className="forum__img"/>
                             </div>
                             <div className='forum__info'>
                                 <h2 className='forum__title'>Sign up</h2>
